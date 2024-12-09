@@ -1,0 +1,369 @@
+:root {
+    /* Farbvariablen */
+    --primary-color: rgba(143, 193, 222, 0.51); /* Primärfarbe mit Transparenz */
+    --secondary-color: #672783; /* Sekundärfarbe */
+    --primary-accent-color: #c63fa7; /* Akzentfarbe 1 */
+    --secondary-accent-color: #f2dbaa; /* Akzentfarbe 2 */
+
+    /* Hintergrund- und Textfarben */
+    --background-color: #131022; /* Hintergrundfarbe der Seite */
+    --container-background-color: rgba(68, 68, 68, 0.27);
+    --text-color: #e4f1f7; /* Textfarbe */
+
+    /* Allgemeine Gestaltungseigenschaften */
+    --border-radius: 1rem; /* Standard-Rundung für Ecken */
+}
+
+* {
+    margin: 0; /* Entfernt den Standard-Margin */
+    padding: 0; /* Entfernt den Standard-Padding */
+    box-sizing: border-box; /* Stellt sicher, dass Padding und Border in die Breiten- und Höhenberechnung einfließen */
+
+    /* Schriftarten und allgemeine Texteinstellungen */
+    font-family: "Inter", sans-serif; /* Schriftart */
+    font-optical-sizing: auto; /* Automatische Schriftgrößenanpassung */
+    font-weight: 400; /* Normale Schriftstärke */
+    font-style: normal; /* Normale Schriftart */
+
+    /* Textfarbe */
+    color: var(--text-color); /* Textfarbe aus den Variablen */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+header {
+    text-align: center; /* Zentriert den Text im Header */
+}
+
+main {
+    flex: 1; /* Hauptinhalt nimmt den verfügbaren Platz ein */
+    padding: 4rem;
+}
+
+/*TODO: webkit für animation firefox*/
+h1 {
+    /* Benutzerselektion deaktivieren (Text kann nicht markiert werden) */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Alte Versionen von Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard, unterstützt von modernen Browsern */
+
+    /* Textstil */
+    font-size: 18rem; /* Schriftgröße */
+    font-weight: bolder; /* Schriftstärke */
+    letter-spacing: 0.2em; /* Abstand zwischen Buchstaben */
+    text-align: center; /* Zentrierter Text */
+
+    /* Layout und Abstände */
+    margin: 2rem 2rem 1rem; /* Außenabstand: oben 2rem, rechts/links 2rem, unten 1rem */
+    width: 100%; /* Nimmt die volle Breite des Containers ein */
+    display: block; /* Block-Level-Element */
+    opacity: 1; /* Volle Deckkraft */
+
+    /* Hintergrund für den Text */
+    background-image: url('/bilder/hintergrundbilder/hintergrundbild1.webp'); /* Hintergrundbild */
+    background-size: cover; /* Bild bedeckt das gesamte Element */
+    background-position: center; /* Bild wird zentriert */
+    background-repeat: no-repeat; /* Kein Wiederholen des Hintergrundbilds */
+    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
+
+    /* Hintergrundclip für Texteffekt */
+    -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
+    background-clip: text; /* Standard-Version für den Textclip */
+    color: transparent; /* Text ist unsichtbar, nur Hintergrund wird angezeigt */
+
+    /* Animation */
+    animation: revealText 6s ease forwards; /* Animation: Text wird schrittweise sichtbar */
+}
+
+/*TODO: webkit für animation firefox*/
+h2 {
+    /* Benutzerselektion deaktivieren (Text kann nicht markiert werden) */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Alte Versionen von Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard, unterstützt von modernen Browsern */
+
+    /* Textstil */
+    font-size: 4rem; /* Schriftgröße */
+    font-weight: bolder; /* Schriftstärke */
+    letter-spacing: 0.1em; /* Abstand zwischen Buchstaben */
+    text-align: center; /* Zentrierter Text */
+    text-shadow: 1px 1px; /* Leichter Schatten für den Text */
+
+    /* Layout und Abstände */
+    margin: 5rem 1rem; /* Außenabstand: oben/unten 5rem, links/rechts 1rem */
+    width: 100%; /* Nimmt die volle Breite des Containers ein */
+    display: block; /* Block-Level-Element */
+    opacity: 1; /* Volle Deckkraft */
+
+    /* Hintergrund für den Text */
+    background-image: url('bilder/hintergrundbilder/background5.webp'); /* Hintergrundbild */
+    background-size: cover; /* Bild bedeckt das gesamte Element */
+    background-position: center; /* Bild wird zentriert */
+    background-repeat: no-repeat; /* Kein Wiederholen des Hintergrundbilds */
+    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
+
+    /* Hintergrundclip für Texteffekt */
+    -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
+    background-clip: text; /* Standard-Version für den Textclip */
+    color: transparent; /* Text ist unsichtbar, nur Hintergrund wird angezeigt */
+
+    /* Animation */
+    animation: revealText 6s ease forwards; /* Animation: Text wird schrittweise sichtbar */
+}
+
+@keyframes revealText {
+    0% {
+        background-size: 0; /* Zu Beginn ist der Hintergrund nicht sichtbar */
+        -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
+        opacity: 1;
+    }
+    50% {
+        background-size: 100%; /* Hintergrund füllt das Element zur Hälfte */
+        opacity: 1;
+    }
+    100% {
+        background-size: 100%; /* Hintergrund füllt das Element vollständig */
+        opacity: 1;
+    }
+}
+
+nav img {
+    padding: 10px;
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 1000;
+    height: 100px;
+    padding: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+nav li {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex: auto;
+    justify-content: center;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease;
+}
+
+nav li a {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    text-align: center;
+    position: relative; /* Notwendig für die absolute Positionierung der Pseudo-Elemente */
+    overflow: hidden; /* Versteckt Überlauf */
+    font-size: 1rem;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: var(--text-color);
+    text-shadow: 0 0 2px black;
+    border: 1px solid rgba(68, 68, 68, 0.27);
+}
+
+nav li a::before {
+    content: ""; /* Erzeugt ein leeres Pseudo-Element */
+    position: absolute; /* Absolute Positionierung */
+    top: 0; /* Oben ausrichten */
+    left: 0; /* Links ausrichten */
+    width: 100%; /* Breite 100% des Elternelements */
+    height: 100%; /* Höhe 100% des Elternelements */
+    background-image: url('bilder/hintergrundbilder/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Bild deckt das Element ab */
+    background-position: center; /* Bild wird zentriert */
+    opacity: 0; /* Zu Beginn unsichtbar */
+    filter: brightness(0.4); /* Helligkeit des Hintergrundbildes */
+    transition: opacity 0.5s ease; /* Weiche Übergänge für die Opazität */
+    z-index: 0; /* Unter dem Text anzeigen */
+}
+
+nav li a:hover::before {
+    opacity: 1; /* Sichtbar beim Hover */
+    filter: brightness(0.4); /* Helligkeit bleibt gleich */
+}
+
+nav li a span {
+    position: relative;
+    z-index: 1;
+}
+
+nav li a img {
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 30px 10px var(--background-color);
+}
+
+.parallax-window {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 5px solid rgba(68, 68, 68, 0.27);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.parallax-window-1 {
+    background-image: url('bilder/hintergrundbilder/background1.webp');
+}
+
+.parallax-window-2 {
+    background-image: url('bilder/hintergrundbilder/background2.webp');
+}
+
+.parallax-window-3 {
+    background-image: url('bilder/hintergrundbilder/background3.webp');
+}
+
+.parallax-window-4 {
+    background-image: url('bilder/hintergrundbilder/background4.jpg');
+}
+
+.container {
+    position: relative;
+    background-color: var(--container-background-color);
+    width: 100%;
+    height: 700px;
+    border: 5px solid rgb(40, 40, 40);
+    border-radius: var(--border-radius);
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.container img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.container-description {
+
+}
+
+.container-description h1 {
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.container-description p {
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.footer {
+    font-weight: bolder;
+    background-color: var(--container-background-color); /* Dunkler Hintergrund */
+    color: #fff; /* Helle Schriftfarbe */
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex; /* Flexbox für Spaltenlayout */
+    justify-content: space-between; /* Spalten gleichmäßig verteilen */
+    max-width: 1200px; /* Maximale Breite des Footers */
+    margin: 0 auto; /* Zentrieren des Containers */
+    padding: 0 20px; /* Innenabstand */
+}
+
+.footer-column {
+    flex: 1; /* Spalten gleichmäßig verteilen */
+    margin: 0 10px; /* Abstand zwischen den Spalten */
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.footer-column ul {
+    list-style: none; /* Entfernt Bullet Points */
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin: 20px 0;
+}
