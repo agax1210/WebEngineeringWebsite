@@ -1,23 +1,24 @@
 :root {
     --primary-color: rgb(143, 193, 222);
-    --secondary-color: #672783;
+    --secondary-color: #491860;
     --primary-accent-color: #c63fa7;
     --secondary-accent-color: #f2dbaa;
     --background-color: #131022;
-    --container-background-color: rgba(68, 68, 68, 0.27);
+    --container-background-color: rgb(47, 47, 47);
+    --container-border-color: rgba(68, 68, 68, 0.27);
     --text-color: #e4f1f7;
     --border-radius: 1rem;
 }
 
 * {
-    margin: 0; /* Entfernt den Standard-Margin */
-    padding: 0; /* Entfernt den Standard-Padding */
-    box-sizing: border-box; /* Stellt sicher, dass Padding und Border in die Breiten- und Höhenberechnung einfließen */
-    font-family: "Inter", sans-serif; /* Schriftart */
-    font-optical-sizing: auto; /* Automatische Schriftgrößenanpassung */
-    font-weight: 400; /* Normale Schriftstärke */
-    font-style: normal; /* Normale Schriftart */
-    color: var(--text-color); /* Textfarbe aus den Variablen */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
 }
 
 body {
@@ -30,79 +31,79 @@ body {
 }
 
 header {
-    text-align: center; /* Zentriert den Text im Header */
+    text-align: center;
 }
 
 main {
-    flex: 1; /* Hauptinhalt nimmt den verfügbaren Platz ein */
+    flex: 1;
     padding: 4rem;
 }
 
 h1 {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Alte Versionen von Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Standard, unterstützt von modernen Browsern */
-    font-size: 18rem; /* Schriftgröße */
-    font-weight: bolder; /* Schriftstärke */
-    letter-spacing: 0.2em; /* Abstand zwischen Buchstaben */
-    text-align: center; /* Zentrierter Text */
-    margin: 2rem 2rem 1rem; /* Außenabstand: oben 2rem, rechts/links 2rem, unten 1rem */
-    width: 100%; /* Nimmt die volle Breite des Containers ein */
-    display: block; /* Block-Level-Element */
-    opacity: 1; /* Volle Deckkraft */
-    background-image: url('/bilder/hintergrundbilder/hintergrundbild1.webp'); /* Hintergrundbild */
-    background-size: cover; /* Bild bedeckt das gesamte Element */
-    background-position: center; /* Bild wird zentriert */
-    background-repeat: no-repeat; /* Kein Wiederholen des Hintergrundbilds */
-    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
-    -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
-    background-clip: text; /* Standard-Version für den Textclip */
-    color: transparent; /* Text ist unsichtbar, nur Hintergrund wird angezeigt */
-    animation: revealText 6s ease forwards; /* Animation: Text wird schrittweise sichtbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18rem;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 2rem 2rem 1rem;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    background-image: url('/pictures/hintergrundbilder/hintergrundbild1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: revealText 6s ease forwards;
 }
 
 h2 {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Alte Versionen von Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Standard, unterstützt von modernen Browsern */
-    font-size: 4rem; /* Schriftgröße */
-    font-weight: bolder; /* Schriftstärke */
-    letter-spacing: 0.1em; /* Abstand zwischen Buchstaben */
-    text-align: center; /* Zentrierter Text */
-    text-shadow: 1px 1px; /* Leichter Schatten für den Text */
-    margin: 5rem 1rem; /* Außenabstand: oben/unten 5rem, links/rechts 1rem */
-    width: 100%; /* Nimmt die volle Breite des Containers ein */
-    display: block; /* Block-Level-Element */
-    opacity: 1; /* Volle Deckkraft */
-    background-image: url('bilder/hintergrundbilder/background5.webp'); /* Hintergrundbild */
-    background-size: cover; /* Bild bedeckt das gesamte Element */
-    background-position: center; /* Bild wird zentriert */
-    background-repeat: no-repeat; /* Kein Wiederholen des Hintergrundbilds */
-    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
-    -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
-    background-clip: text; /* Standard-Version für den Textclip */
-    color: transparent; /* Text ist unsichtbar, nur Hintergrund wird angezeigt */
-    animation: revealText 6s ease forwards; /* Animation: Text wird schrittweise sichtbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 1px 1px;
+    margin: 5rem 1rem;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    background-image: url('pictures/hintergrundbilder/background5.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: revealText 6s ease forwards;
 }
 
 @keyframes revealText {
     0% {
-        background-size: 0; /* Zu Beginn ist der Hintergrund nicht sichtbar */
-        -webkit-background-clip: text; /* Webkit-basiert (Safari, Chrome) */
+        background-size: 0;
+        -webkit-background-clip: text;
         opacity: 1;
     }
     50% {
-        background-size: 100%; /* Hintergrund füllt das Element zur Hälfte */
+        background-size: 100%;
         opacity: 1;
     }
     100% {
-        background-size: 100%; /* Hintergrund füllt das Element vollständig */
+        background-size: 100%;
         opacity: 1;
     }
 }
@@ -164,8 +165,8 @@ nav li a {
     text-decoration: none;
     letter-spacing: 0.3em;
     text-align: center;
-    position: relative; /* Notwendig für die absolute Positionierung der Pseudo-Elemente */
-    overflow: hidden; /* Versteckt Überlauf */
+    position: relative;
+    overflow: hidden;
     font-size: 1rem;
     border-radius: 0;
     cursor: pointer;
@@ -174,28 +175,28 @@ nav li a {
 nav li a:hover {
     color: var(--text-color);
     text-shadow: 0 0 2px black;
-    border: 1px solid rgba(68, 68, 68, 0.27);
+    border: 1px solid var(--container-border-color);
 }
 
 nav li a::before {
-    content: ""; /* Erzeugt ein leeres Pseudo-Element */
-    position: absolute; /* Absolute Positionierung */
-    top: 0; /* Oben ausrichten */
-    left: 0; /* Links ausrichten */
-    width: 100%; /* Breite 100% des Elternelements */
-    height: 100%; /* Höhe 100% des Elternelements */
-    background-image: url('bilder/hintergrundbilder/hintergrundbild1.webp'); /* Hintergrundbild */
-    background-size: cover; /* Bild deckt das Element ab */
-    background-position: center; /* Bild wird zentriert */
-    opacity: 0; /* Zu Beginn unsichtbar */
-    filter: brightness(0.4); /* Helligkeit des Hintergrundbildes */
-    transition: opacity 0.5s ease; /* Weiche Übergänge für die Opazität */
-    z-index: 0; /* Unter dem Text anzeigen */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/hintergrundbilder/hintergrundbild1.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    filter: brightness(0.4);
+    transition: opacity 0.5s ease;
+    z-index: 0;
 }
 
 nav li a:hover::before {
-    opacity: 1; /* Sichtbar beim Hover */
-    filter: brightness(0.4); /* Helligkeit bleibt gleich */
+    opacity: 1;
+    filter: brightness(0.4);
 }
 
 nav li a span {
@@ -226,19 +227,19 @@ nav li a img {
 }
 
 .parallax-window-1 {
-    background-image: url('bilder/hintergrundbilder/background1.webp');
+    background-image: url('pictures/hintergrundbilder/background1.webp');
 }
 
 .parallax-window-2 {
-    background-image: url('bilder/hintergrundbilder/background2.webp');
+    background-image: url('pictures/hintergrundbilder/background2.webp');
 }
 
 .parallax-window-3 {
-    background-image: url('bilder/hintergrundbilder/background3.webp');
+    background-image: url('pictures/hintergrundbilder/background3.webp');
 }
 
 .parallax-window-4 {
-    background-image: url('bilder/hintergrundbilder/background4.jpg');
+    background-image: url('pictures/hintergrundbilder/background4.jpg');
 }
 
 .container {
@@ -246,7 +247,7 @@ nav li a img {
     width: 100%;
     max-width: 1200px;
     height: auto;
-    border: 5px solid var(--container-background-color);
+    border: 5px solid var(--container-border-color);
     border-radius: var(--border-radius);
     background-color: var(--container-background-color);
     overflow: hidden;
@@ -257,7 +258,7 @@ nav li a img {
 .container img {
     width: 50%;
     object-fit: cover;
-    border-right: 5px solid var(--container-background-color);
+    border-right: 5px solid var(--container-border-color);
 }
 
 .container-description {
@@ -307,22 +308,22 @@ nav li a img {
 
 .footer {
     font-weight: bolder;
-    background-color: var(--container-background-color); /* Dunkler Hintergrund */
-    color: #fff; /* Helle Schriftfarbe */
+    background-color: var(--container-background-color);
+    color: #fff;
     padding: 20px 0;
 }
 
 .footer-container {
-    display: flex; /* Flexbox für Spaltenlayout */
-    justify-content: space-between; /* Spalten gleichmäßig verteilen */
-    max-width: 1200px; /* Maximale Breite des Footers */
-    margin: 0 auto; /* Zentrieren des Containers */
-    padding: 0 20px; /* Innenabstand */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-column {
-    flex: 1; /* Spalten gleichmäßig verteilen */
-    margin: 0 10px; /* Abstand zwischen den Spalten */
+    flex: 1;
+    margin: 0 10px;
 }
 
 .footer-column h3 {
@@ -332,7 +333,7 @@ nav li a img {
 }
 
 .footer-column ul {
-    list-style: none; /* Entfernt Bullet Points */
+    list-style: none;
     padding: 0;
 }
 
