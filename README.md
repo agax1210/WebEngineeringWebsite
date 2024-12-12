@@ -26,6 +26,8 @@ Die Webanwendung wurde erfolgreich auf den folgenden Browsern getestet:
 
 Für die Anzeige von Icons (Material Symbols) wird eine Schriftart von **Google Fonts** verwendet. Daher ist eine **aktive Internetverbindung** erforderlich, um die Icons korrekt anzuzeigen.
 
+Ein Live-Server wird benötigt, um die Webanwendung ordnungsgemäß auszuführen. Ohne einen Live-Server können bestimmte Funktionen oder Ressourcen nicht korrekt geladen werden.
+
 ---
 
 ## Bildquellen
