@@ -2,7 +2,7 @@
 
 ## Über das Projekt
 
-Dieses Projekt wurde im Rahmen des Moduls **Webengineering** an der **DHBW Karlsruhe** erstellt. Ziel war es, eine Webanwendung zu entwickeln, die moderne Webtechnologien verwendet, um eine ansprechende und funktionsreiche Benutzeroberfläche zu gestalten.
+Dieses Projekt wurde im Rahmen des Moduls **Webengineering** an der **DHBW Karlsruhe** erstellt.
 
 Wie mit dem Dozenten abgesprochen, behandelt dieses Projekt keine Einzelprodukte einer fiktiven Firma, sondern stellt die Übersicht über das Unternehmen **ASTRO LIVING Inc.** sowie seine wichtigsten Produkte dar.
 
@@ -25,6 +25,7 @@ Die Webanwendung wurde erfolgreich auf den folgenden Browsern getestet:
 ### Besonderer Hinweis:
 
 Für die Anzeige von Icons (Material Symbols) wird eine Schriftart von **Google Fonts** verwendet. Daher ist eine **aktive Internetverbindung** erforderlich, um die Icons korrekt anzuzeigen.
+
 ---
 
 ## Bildquellen
